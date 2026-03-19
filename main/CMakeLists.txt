@@ -1,0 +1,12 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "ws2812.c"
+        "ws2812_app.c"
+        "ws2812_port_espidf_spi.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        esp_driver_spi
+        esp_hw_support
+)
